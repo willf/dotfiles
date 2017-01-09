@@ -1,6 +1,6 @@
 # User configuration
 
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/will/bin:/usr/local/scala/bin:/usr/local/mysql/bin:/usr/local/mongodb/bin:/Users/will/bin/play:/usr/local/share/npm/bin:/Users/will/Library/Haskell/bin:~/.cabal/bin:/usr/local/Cellar/ruby/1.9.3-p125/bin"
+export PATH="/Users/willf/.rbenv/shims:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/will/bin:/usr/local/scala/bin:/usr/local/go/bin:/Users/willf/code/go/bin:/usr/texbin:/Library/TeX/Distributions/Programs/texbin/:"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -21,6 +21,10 @@ export ARCHFLAGS="-arch x86_64 -Wno-error=unused-command-line-argument-hard-erro
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export DEFAULT_USER="will"
+
+# Anaconda and Jupyter and Python ...
+
+export PATH=$PATH:$HOME/anaconda/bin
 
 # Golang
 export PATH=$PATH:/usr/local/go/bin
@@ -48,3 +52,12 @@ test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_in
 
 # UNMOUNT Time Machine
 alias umtm="diskutil unmount /Volumes/Time\ Machine\ Backup\ Disk"
+
+# RB INIT
+
+eval "$(rbenv init -)"
+
+# Shuffle
+
+alias shuffle=/usr/local/bin/gshuf
+alias shuf=/usr/local/bin/gshuf
